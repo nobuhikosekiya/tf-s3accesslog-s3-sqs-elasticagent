@@ -1,0 +1,15 @@
+aws_region = "ap-northeast-1"
+aws_profile = "default"
+resource_prefix = "tf-s3accesslog-s3-sqs-elasticagent"
+ec2_instance_type = "t3.medium"
+ec2_ami = "ami-0599b6e53ca798bb2"
+
+# Tags
+default_tags = {}
+
+# S3 access logs configuration
+access_logs_retention_days = 90
+
+# Optional: Specify a source bucket name to create and configure for access logging
+# Leave empty to skip source bucket creation
+source_bucket_name = ""
